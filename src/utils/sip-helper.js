@@ -36,8 +36,8 @@ class SipHelper {
     login(phone = 199301) {
         store.dispatch(setFsStatus('loging'));
         //创建一个 JsSIP User Agent
-        const wsUri = 'wss://test-10-9-12368.aegis-info.com:7443'; // Fs的 ws协议地址
-        const sipPwd = 'num112368'; // FS密码
+        const wsUri = 'wss://test-10-9-12368.aegis-info.com:74431'; // Fs的 ws协议地址
+        const sipPwd = 'num1123681'; // FS密码
         const sipUri = 'sip:' + phone + '@test-10-9-12368.aegis-info.com;transport=wss'; // 分机号注册地址 格式 sip: + 分机号码 + @ + FS注册地址
         const configuration = {
             sockets: [new JsSIP.WebSocketInterface(wsUri)],
