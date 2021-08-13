@@ -53,8 +53,8 @@ class SipHelper {
         this.coolPhone = new JsSIP.UA(configuration);
 
         // Starting the User Agent
+	this.setUAEvent();
         this.coolPhone.start();
-        this.setUAEvent();
     }
 
     /**
